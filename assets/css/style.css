@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroud-color: linear-gradient(90deg, rgba(88,129,87,1) 0%, rgba(58,90,64,1) 51%, rgba(52,78,65,1) 100%);
+    --container-background: #dad7cd;
+    --primary-color: #344e41;
+    --li-background: #a3b18a;
+    --font-color: #ffff;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--backgroud-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    width: 40%;
+    /* height: 600px; */
+    background-color: var(--container-background);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+    gap: 50px;
+}
+
+.main-container h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.main-container form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+form #Text {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--font-color);
+    padding-left: 10px;
+    outline: none;
+}
+
+form .create-btn {
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+ul li {
+    width: 100%;
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: var(--li-background);
+    color: var(--font-color);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.apagar {
+    width: 20%;
+    height: 60%;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
